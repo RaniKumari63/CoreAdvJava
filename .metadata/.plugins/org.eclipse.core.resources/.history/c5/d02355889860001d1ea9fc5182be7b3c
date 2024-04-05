@@ -1,0 +1,15 @@
+package fundamental;
+
+public class StudentInstanceEx {
+
+	String name;
+	int rollno;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//the value of variable varied from object to object is instance variable
+		//for every object seperate copy of instance variable is maintained
+		
+	}
+
+}

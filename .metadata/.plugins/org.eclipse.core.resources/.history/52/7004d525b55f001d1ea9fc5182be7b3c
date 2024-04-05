@@ -1,0 +1,46 @@
+package fundamental;
+
+public class ArrayEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//array decalaration
+//int[] x;
+//int  []x;
+//int  x[];
+//int x[][];\
+//int [][]x;
+///
+		//array  creation
+		
+		int[] a=new int[3];
+		System.out.println(a.getClass().getName());
+		
+		//  int   [I
+		//int[][] [[I
+		//double[]  [D
+		//short[] [S
+		//byte[] [B
+		//boolean[] [Z
+	// at time of array creation compulsory we should specify the size otherwise we will get compile   time error
+		//int[] x=new int[]; wrong 
+		//int[] x=new int[0]; correct
+		//int[] x=new int[-3]; wrong  negativearraysizeexception
+		System.out.println(args.length);
+		//int[] x=new int['a']; correct
+		/*
+		 * byte b=20; int[] x=new int[b];
+		 */
+		/*
+		 * short s=30; int [] x=new int[s];
+		 */
+		
+		int[] x=new int[10l]; 
+		
+	//	
+		
+		
+
+}
+
+}

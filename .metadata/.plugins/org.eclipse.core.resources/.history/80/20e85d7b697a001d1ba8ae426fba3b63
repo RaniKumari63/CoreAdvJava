@@ -1,0 +1,20 @@
+package com.lang2;
+
+public class Student4 {
+	String name;
+	int rollno;
+	Student4(String name,int rollno)
+	{
+		this.name=name;
+		this.rollno=rollno;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Student4 s1=new Student4("rani",88);
+Student4 s2=new Student4("rani",88);
+Student4 s3=new Student4("rani",88);
+Student4 s4=new Student4("rani",88);
+	}
+
+}

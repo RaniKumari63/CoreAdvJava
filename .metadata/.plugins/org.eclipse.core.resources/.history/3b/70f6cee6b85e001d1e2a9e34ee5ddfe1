@@ -1,0 +1,20 @@
+package fundamental;
+
+public class Jioplan {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int month=499;
+		double gst=0.18;
+		double gst1=(18/100);
+		
+		double monthgst=499*0.18;
+		System.out.println(monthgst);
+		double monthingst=month+monthgst;
+		double sixmonth=monthingst*6;
+		System.out.println(sixmonth);
+		
+
+	}
+
+}

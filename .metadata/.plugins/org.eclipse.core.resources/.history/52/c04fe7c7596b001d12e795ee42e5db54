@@ -1,0 +1,10 @@
+package com.interface1;
+
+public class Two2 {
+
+	public void m2()
+	{
+	}
+	}
+
+}

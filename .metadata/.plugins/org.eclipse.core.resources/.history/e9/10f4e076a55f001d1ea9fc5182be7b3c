@@ -1,0 +1,30 @@
+package fundamental;
+
+public class ArrayEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//array decalaration
+//int[] x;
+//int  []x;
+//int  x[];
+//int x[][];\
+//int [][]x;
+///
+		//array  creation
+		
+		int[] a=new int[3];
+		System.out.println(a.getClass().getName());
+		
+		//  int   [I
+		//int[][] [[I
+		//double[]  [D
+		//short[] [S
+		//byte[] [B
+		//boolean[] [Z
+		
+		
+
+}
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <context-param>
+  <param-name>a</param-name>
+  <param-value>apple</param-value>
+  </context-param>
+  <context-param>
+  <param-name>b</param-name>
+  <param-value>bombay</param-value>
+  </context-param>
+  
+  
+  <servlet>
+  	<servlet-name>ServletContextEx</servlet-name>
+  	<display-name>ServletContextEx</display-name>
+  	<description></description>
+  	<servlet-class>com.suchii.controlller.ServletContextEx</servlet-class>
+   
+  
+  </servlet>
+  <servlet>
+ 
+  
+ 
+  	<servlet-name>ServletEx2</servlet-name>
+  	<display-name>ServletEx2</display-name>
+  	<description></description>
+  	<servlet-class>com.suchiit.controller.ServletEx2</servlet-class>
+  
+ 
+  </servlet>
+  <servlet>
+  	<servlet-name>ServletEx1</servlet-name>
+  	<display-name>ServletEx1</display-name>
+  	<description></description>
+  	<servlet-class>com.suchii.controlller.ServletEx1</servlet-class>
+  <init-param>
+  <param-name>c</param-name>
+  <param-value>ccc</param-value>
+  
+  </init-param>
+  <init-param>
+  <param-name>d</param-name>
+  <param-value>ddd</param-value>
+  
+  </init-param>
+  
+  </servlet>
+  <servlet>
+  	<servlet-name>ServletEx4</servlet-name>
+  	<display-name>ServletEx4</display-name>
+  	<description></description>
+  	<servlet-class>com.suchii.controlller.ServletEx2</servlet-class>
+ <init-param>
+  <param-name>e</param-name>
+  <param-value>eee</param-value>
+  
+  </init-param>
+  <init-param>
+  <param-name>f</param-name>
+  <param-value>fff</param-value>
+  
+  </init-param>
+ 
+ 
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletContextEx</servlet-name>
+  	<url-pattern>/ServletContextEx</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletEx2</servlet-name>
+  	<url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletEx1</servlet-name>
+  	<url-pattern>/ServletEx1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ServletEx4</servlet-name>
+  	<url-pattern>/ServletEx4</url-pattern>
+  </servlet-mapping>
+</web-app>

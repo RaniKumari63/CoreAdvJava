@@ -1,0 +1,30 @@
+package com.streams1;
+
+import java.util.ArrayList;
+import java.util.function.Consumer;
+import java.util.function.Function;
+
+public class ForEachEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ArrayList<Integer> l1=new ArrayList<Integer>();
+l1.add(10);
+l1.add(0);
+l1.add(15);
+l1.add(5);
+l1.add(20);
+System.out.println(l1);
+l1.stream().forEach(System.out::println);
+Consumer<Integer> f=i->{
+	System.out.println("The Square of "+i+"is:"+(i*i));
+};
+	
+l1.stream().forEach(f);
+
+l1.stream().forEach(i->{
+	System.out.println("The Square of "+i+"is:"+(i*i));
+});
+	}
+
+}

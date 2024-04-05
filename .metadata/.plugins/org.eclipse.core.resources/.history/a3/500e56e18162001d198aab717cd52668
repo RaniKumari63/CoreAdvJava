@@ -1,0 +1,22 @@
+package fundamental;
+
+public class StaticEx4 {
+static int i=100;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ System.out.println("directly:"+i);
+	funx();
+	
+	System.out.println("using class name "+StaticEx4.i);
+	StaticEx4.funx();
+	StaticEx4 ex=new StaticEx4();
+	System.out.println("using class name "+ex.i);
+	
+	System.out.println();
+	}
+	static void funx()
+	{
+		System.out.println("Static method funx");
+	}
+
+}

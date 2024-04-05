@@ -1,0 +1,36 @@
+package com.java8features;
+class Student1
+{
+	String sname;
+	int marks;
+	public Student1() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Student1(String sname, int marks) {
+		super();
+		this.sname = sname;
+		this.marks = marks;
+	}
+	public String getSname() {
+		return sname;
+	}
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	
+}
+public class FunctionInterface1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

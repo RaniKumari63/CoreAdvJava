@@ -1,0 +1,8 @@
+package com.ums.details;
+
+public class CustomerDetails {
+	void customDetils()
+	{
+		System.out.p
+	}
+}

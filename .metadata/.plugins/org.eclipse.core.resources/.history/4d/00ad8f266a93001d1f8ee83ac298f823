@@ -1,0 +1,19 @@
+package com.date1;
+
+import java.time.Instant;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Date6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Calendar cln=Calendar.getInstance();
+		Date d=cln.getTime();
+		Instant instt = d.toInstant();  
+		System.out.println("The Original Date is:"+d.toString());
+		System.out.println("the instant is:"+instt);
+	}
+
+}

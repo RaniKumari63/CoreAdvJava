@@ -1,0 +1,16 @@
+package EmployeeManagementSystem;
+
+public class EmployeeDetails {
+	
+	
+	public void empDetails()
+	{
+		while(true)
+		{
+			 System.out.println("------------------------------------");
+			 System.out.println("               1)AddEmployees       ");
+			
+		}
+	}
+
+}

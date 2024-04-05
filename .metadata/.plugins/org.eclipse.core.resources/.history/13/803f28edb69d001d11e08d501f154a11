@@ -1,0 +1,23 @@
+package com.java8features;
+
+import java.util.function.Predicate;
+
+public class Test133 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String[] s= {"Nag","Chiranjeevi","Venkatesh","Balaiah","Sunny","Katrina"};
+	
+	Predicate<String>p=s1->s1.length()%2==0;
+	for(String s1:s)
+	{
+		if(p.test(s1))
+		{
+			System.out.println(s1);
+		}
+	}
+	}
+
+}

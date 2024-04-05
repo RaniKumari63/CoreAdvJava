@@ -1,0 +1,79 @@
+package com.lunch;
+
+import java.util.Scanner;
+
+public class IceCreamDetails {
+
+	int bill=0;
+	int vanilla_price=10;
+	int vanilla_scoop=0;
+	int vanilla_bill=0;
+	int chocolate_price=15;
+	int chocolate_scoop=0;
+	int chocolate_bill=0;
+	int buttersc_price=20;
+	int buttersc_scoop=0;
+	int buttersc_bill=0;
+	BriyaniDetails obj=new BriyaniDetails();
+    Scanner sc=new Scanner(System.in);
+    
+    void GetVanillaIceCream()
+    { 
+    	System.out.println("How many scoops of vanilla ice cream do you want");
+	    Scanner sc=new Scanner(System.in);
+		int vanilla_scoop=sc.nextInt();
+		vanilla_bill=vanilla_price*vanilla_scoop;
+		bill+=vanilla_bill;
+    	
+    	
+    }
+    void GetChocolateIceCream()
+    {
+    	System.out.println("How many scoops of chocolate ice cream do you want");
+	    Scanner sc=new Scanner(System.in);
+		int chocolate_scoop=sc.nextInt();
+		chocolate_bill=chocolate_price*chocolate_scoop;
+		bill+=chocolate_bill;
+    	
+    }
+    void GetButterScotchIceCream()
+    {
+    	System.out.println("How many scoops of butterscotch ice cream  do you want");
+	    Scanner sc=new Scanner(System.in);
+		int buttersc_scoop=sc.nextInt();
+		buttersc_bill=buttersc_price*buttersc_scoop;
+		bill+=buttersc_bill;
+    	
+    }
+    int getBill( )
+    {
+      return bill;
+    }
+	void GetIceCreamDetails()
+	{
+		System.out.println("--------------------------------");
+		System.out.println("        1)VanilaIceCream       ");
+		System.out.println("        2)ChocolateIceCream          ");
+		System.out.println("        3)ButterScotchIceCream           ");
+		System.out.println("        4)Back                  ");
+		System.out.println("--------------------------------");
+		System.out.println("please enter which IceCream do you want");
+		int choice=sc.nextInt();
+		switch(choice)
+		{ 
+		case 1:
+			obj.GetChickenBriyani();
+			break;
+		case 2:
+			obj.GetVegBriyani();
+			break;
+		case 3:
+			obj.GetFishBriyani();
+			break;
+		case 4:
+			System.exit(0);
+		
+		
+		}
+	}
+}

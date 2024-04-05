@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+.request-now{
+background-color: black;
+color:white;
+border:none;
+height:40px;
+width:110px;
+cursor:pointer;
+
+
+}
+.amazon-button{
+
+background-color: rgb(255,216,20);
+color:black;
+border:none;
+height:30px;
+width:140px;
+border-radius:15px;
+cursor:pointer;
+
+}
+.github-button{
+background-color:rgb(46,164,79);
+color:white;
+border:none;
+height:40px;
+width:90px;
+
+cursor:pointer;
+border-radius:2px;
+}
+
+</style>
+<button class="request-now">
+Request now
+</button>
+
+<button class="amazon-button">
+Add to Cart
+</button>
+
+<button class="github-button">
+Sign up
+</button>
+</body>
+</html>

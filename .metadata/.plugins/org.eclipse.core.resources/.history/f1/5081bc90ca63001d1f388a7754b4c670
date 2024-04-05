@@ -1,0 +1,23 @@
+package fundamental;
+
+public class OperatorEx39 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int x='a';
+System.out.println(x);
+double d=10;
+System.out.println(d);
+
+int x1=130;
+byte b=(byte)x1;
+
+System.out.println(b);
+
+int x2=150;
+short s=(short)x2;
+byte b=(byte)x2;
+
+	}
+
+}

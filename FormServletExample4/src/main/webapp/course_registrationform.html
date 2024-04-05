@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>Registration form</h2>
+<h3>Student Course Registration</h3>
+<form method="post" action="./reg">
+<table>
+<tr>
+<td>Student Name</td>
+<td><input type="text" name="sname"  /></td>
+
+
+
+</tr>
+
+<tr>
+
+<td>
+Student id
+</td>
+<td><input type="text" name="sid"/></td>
+</tr>
+
+<tr>
+<td>
+Student Qualification
+
+</td>
+<td>
+<input type="checkbox" value="bsc" name="squal"/>bsc<br>
+<input type="checkbox" value="mca" name="squal"/>mca<br>
+<input type="checkbox" value="phd" name="squal"/>phd<br>
+<input type="checkbox" value="btech" name="squal"/>btech<br>
+<input type="checkbox" value="mtech" name="squal"/>mtech<br>
+
+</td>
+
+</tr>
+<tr>
+<td> Student Gender</td>
+<td> <input type="radio" value="Male" name="sgender"/>Male<br>
+ <input type="radio" value="FeMale" name="sgender"/>FeMale<br>
+</td>
+</tr>
+<tr>
+<td>Student Technologies</td>
+<td>
+<select size="4" name="stech" multiple="multiple">
+<option value="C">C</option>
+<option value="C++">C++</option>
+<option value="Java">JAVA</option>
+<option value=".Net">.Net</option>
+<option value="Oracle">Oracle</option>
+<option value="Testing Tools">Testing Tools</option>
+<option value="Sap">Sap</option>
+</select>
+
+
+
+
+</td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>
+<select name="branch">
+<option value="Ameerpet">Ameerpet</option>
+<option value="S R Nagar">S R Nagar</option>
+<option value="Madapur">Madapur</option>
+<option value="KPHB">KPHB</option>
+<option value="Banglore">Banglore</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Student Address</td>
+<td><textarea rows="10" cols="50" name="saddr"></textarea></td>
+</tr>
+<tr> <td>
+<input type="submit" value="Registration"/>
+</td></tr>
+</table>
+
+
+
+
+
+</form>
+</body>
+</html>

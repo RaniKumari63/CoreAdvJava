@@ -1,0 +1,17 @@
+package com.iterate;
+
+import java.util.Scanner;
+
+public class ForEx8 {
+
+	public static void main(String[] args) {
+	int	num=121;
+	int temp=num;
+	
+	int sum=0;
+		System.out.println(num%10);
+		
+		System.out.println((sum*10)+(num%10));
+
+	}
+}

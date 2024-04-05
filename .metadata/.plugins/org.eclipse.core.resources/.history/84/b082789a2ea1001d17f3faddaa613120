@@ -1,0 +1,41 @@
+package com.streams1;
+
+class Customer
+{
+	int id;
+	String name;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Customer(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+	
+}
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Customer c=new Customer(101, "abc");
+	c.getName();
+	System.out.println(c.getName());
+	Customer c1=new Customer(101,null);
+	
+	String name=c1.getName();
+	System.out.println(name);
+	name.toUpperCase();
+		
+	}
+
+}

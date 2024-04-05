@@ -1,0 +1,11 @@
+package fundamental;
+
+public class MainEx2 {
+
+	static public  void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("main");
+	}
+	
+
+}

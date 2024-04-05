@@ -1,0 +1,12 @@
+package com.lang2;
+
+public class Test {
+public String toString() {
+	return "Test";
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Integer i=new Integer(10);
+	}
+
+}

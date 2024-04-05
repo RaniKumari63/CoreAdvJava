@@ -1,0 +1,50 @@
+package com.collections;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class SetEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int count[]= {34,22,10,60,30,22};
+Set<Integer> set=new HashSet<Integer>();
+
+
+	for(int i=0;i<5;i++)
+		 set.add(count[i]);
+	System.out.println(set);
+	TreeSet<Integer> sortedSet=new TreeSet<Integer>(set);
+	System.out.println("The sorted list is:");
+    System.out.println(sortedSet);
+
+    System.out.println("The First element of the set is: "+ (Integer)sortedSet.first());
+    System.out.println("The last element of the set is: "+ (Integer)sortedSet.last());
+	
+	HashSet<Integer> hset=new HashSet<Integer>();
+	hset.add(null);
+	
+	hset.add(1);
+	hset.add(null);
+	System.out.println(hset);
+	
+	HashSet<String> set1=new HashSet<String>();
+	set1.add("one");
+	set1.add("two");
+	set1.add("three");
+	set1.add("four");
+	set1.add("five");
+	Iterator<String> i=set1.iterator();
+	while(i.hasNext())
+	{System.out.println(i.next());
+		
+	}
+	
+	
+	}
+
+	
+	
+}

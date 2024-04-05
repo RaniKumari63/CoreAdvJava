@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CaclTest" project="Junit6" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.suchiit.Junit6.CaclTest" time="0.002" displayname="CaclTest" uniqueid="[engine:junit-jupiter]/[class:com.suchiit.Junit6.CaclTest]">
+    <testcase name="testDivide" classname="com.suchiit.Junit6.CaclTest" time="0.002" displayname="testDivide()" uniqueid="[engine:junit-jupiter]/[class:com.suchiit.Junit6.CaclTest]/[method:testDivide()]">
+      <failure>org.opentest4j.AssertionFailedError: Not yet implemented&#13;
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)&#13;
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:134)&#13;
+	at com.suchiit.Junit6.CaclTest.testDivide(CaclTest.java:11)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+&#13;
+</failure>
+    </testcase>
+  </testsuite>
+</testrun>

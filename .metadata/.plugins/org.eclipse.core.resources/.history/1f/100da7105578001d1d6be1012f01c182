@@ -1,0 +1,43 @@
+package com.abstract10;
+
+import javax.xml.stream.events.Characters;
+
+public class TicTacToe {
+char[][] board;
+int turns;
+TicTacToe()
+{
+	board=new char[3][3];
+	turns=0;
+	for(int i=0;i<board.length;i++)
+	{
+		 for(int j=0;j<board.length;j++)
+		 {
+			board[i][j]=Characters.SPACE;
+			
+		 }
+	}
+	for(int i=0;i<board.length;i++)
+	{
+		 for(int j=0;j<board.length;j++)
+		 {
+			System.out.println(board[i][j]);
+		 }
+	}
+}
+int count;
+boolean isWinner(char p)
+{for(int i=0;i<board.length;i++)
+{ count=0;
+	 for(int j=0;j<board.length;j++)
+	 {
+		if(board[i][count])==
+				
+		
+	 }
+	 count++;
+}
+	
+	return true;
+}
+}

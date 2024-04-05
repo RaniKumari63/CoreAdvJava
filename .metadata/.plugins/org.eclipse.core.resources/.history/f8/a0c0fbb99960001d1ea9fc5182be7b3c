@@ -1,0 +1,13 @@
+package fundamental;
+
+public class InstanceEx0 {
+
+	int x=10;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(x);//non-static variable cannot referenced from a static context
+		
+	}
+
+}

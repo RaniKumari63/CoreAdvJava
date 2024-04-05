@@ -1,0 +1,119 @@
+package fundamental;
+
+public class ArrayEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//array decalaration
+//int[] x;
+//int  []x;
+//int  x[];
+//int x[][];\
+//int [][]x;
+///
+		//array  creation
+		
+		int[] a=new int[3];
+		System.out.println(a.getClass().getName());
+		
+		//  int   [I
+		//int[][] [[I
+		//double[]  [D
+		//short[] [S
+		//byte[] [B
+		//boolean[] [Z
+	// at time of array creation compulsory we should specify the size otherwise we will get compile   time error
+		//int[] x=new int[]; wrong 
+		//int[] x=new int[0]; correct
+		//int[] x=new int[-3]; wrong  negativearraysizeexception
+		System.out.println(args.length);
+		//int[] x=new int['a']; correct
+		/*
+		 * byte b=20; int[] x=new int[b];
+		 */
+		/*
+		 * short s=30; int [] x=new int[s];
+		 */
+		
+		//int[] x=new int[10l];  wrong
+		
+// 2 dim array creation
+		
+		
+		/*
+		 * example 1
+		 * int[][] x=new int[2][];
+		 * 
+		 * x[0]=new int[2]; x[1]=new int[3];
+		 */
+		
+		/*
+		 * example 2
+		 * int[][][] x=new int[2][][]; x[0]=new int[3][]; x[0][0] = new int[1]; x[0][1]=
+		 * new int[2]; x[0][2]=new int[2];
+		 * 
+		 * x[1]= new int[2][2];
+		 */
+		
+		
+		/*
+		 * int[] a=new int[]; wrong int[] a=new int[3]; correct int[][]a=new int[][];
+		 * wrong int[][]a= new int[3][]; correct int[][] a=new int[][4]; wrong int[][]
+		 * a=new int[3][4]; correct int[][][] a=new int[3][4][5]; correct int[][][]
+		 * a=new int[3][4][];correct int[][][] a=new int[3][][5]; wrong int[][][] a=new
+		 * int[][4][5]; wrong
+		 */
+		
+		
+		// array initialization
+		//example1
+//		int[] x=new int[3];
+//		System.out.println(x); [I@3e543a3
+//		System.out.println(x[0]); 0
+		/* example2
+		 * int[][] x=new int[2][3]; System.out.println(x); address
+		 * System.out.println(x[0]); address System.out.println(x[0][0]); 0
+		 */
+	//	
+	/*
+	 * //example 3
+	 * 
+	 * int[][] x=new int[2][]; System.out.println(x); address
+	 * System.out.println(x[0]);null System.out.println(x[0][0]); null pointer
+	 * exception
+	 */
+	
+		//example 4
+		//array intialization
+		/*
+		 * int[] x= new int[6]; x[0]=10; x[1]=20;x[2]=30;x[3]=40;x[4]=50;x[5]=60;
+		 * x[6]=70; //array outofbounds exception x[-6]=80;// array outofbounds
+		 * exception x[2.5]=90 //wrong
+		 */				 
+			
+		//
+		
+	//array dec creat and intiali
+	/*	int[] x;
+		x=new int[3];
+		x[0]=10;
+		x[1]=20;
+		x[2]=30;*/
+		
+	/*
+	 * int[] x= {10,20,30}; char[] ch= {'a','e','i','o','u'}; String[] s=
+	 * {"a","b","c","d"}; int[][] x1= {{10,20},{30,40,50}};
+	 */
+		
+		int[][][] x= {{{10,20,30},{40,50,60}},{{70,80},{90,100,110}}};
+		
+		
+		
+		
+		
+				 
+		
+
+}
+
+}

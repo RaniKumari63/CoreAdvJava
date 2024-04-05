@@ -1,0 +1,13 @@
+package com.java8features;
+
+import java.util.function.BiPredicate;
+
+public class BiPredicateEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+BiPredicate<Integer,Integer> p=(a,b)->(a>b&&b<a);
+System.out.println(p.test(10, 20));
+	}
+
+}

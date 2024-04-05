@@ -1,0 +1,15 @@
+package com.lang2;
+
+public class Factorial {
+public static void main(String[] args)
+{
+	int num=factorial(5);
+	System.out.println(num);
+}
+static int factorial(int n)
+{  if(n>=1)
+	return n*factorial(n-1);
+else
+	return 1;
+}
+}

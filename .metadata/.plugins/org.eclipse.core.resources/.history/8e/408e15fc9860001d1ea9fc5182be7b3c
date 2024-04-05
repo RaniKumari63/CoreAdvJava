@@ -1,0 +1,17 @@
+package fundamental;
+
+public class StudentInstanceEx {
+
+	String name;
+	int rollno;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//instance variable are created at the time of object creation
+		//the value of variable varied from object to object is instance variable
+		//for every object seperate copy of instance variable is maintained
+		//instance variable should be declared within the class directly but outside any method ,block,or constructor 
+		//when object is there instance variable is there
+		// no object no instance variable
+	}
+
+}

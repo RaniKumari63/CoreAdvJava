@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MethodReferenceEx1.java&apos; to &apos;fundamental/src/com.java8features&apos;&#x0D;&#x0A;- Original project: &apos;fundamental&apos;&#x0D;&#x0A;- Destination element: &apos;fundamental/src/com.java8features&apos;&#x0D;&#x0A;- Original element: &apos;com.java8features.MethodReferenceEx1.java&apos;" description="Copy compilation unit" destination="/src&lt;com.java8features" element1="/src&lt;com.java8features{MethodReferenceEx1.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1681362825500" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package com.iterate;
+
+import java.util.Scanner;
+
+public class ForEx7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int num=121;
+
+	if(num>100)
+	{
+		String s=num+"";
+		System.out.println(s);
+	}
+
+
+	}
+
+}

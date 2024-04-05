@@ -1,0 +1,13 @@
+package fundamental;
+
+public class StaticEx {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//static variables
+	//the variable is not changed from object to object then we declare variable has static variable	
+	
+	
+	}
+
+}

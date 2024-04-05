@@ -1,0 +1,12 @@
+package com.internalization;
+
+import java.util.Locale;
+
+public class LocaleEx1 {
+	public static void main(String[] args)
+	{Locale l1=Locale.getDefault();
+	System.out.println(l1.getCountry()+"\t"+l1.getLanguage());	
+	System.out.println(l1.getDisplayCountry()+"\t"+l1.getDisplayLanguage());
+	}
+
+}

@@ -1,0 +1,55 @@
+
+package com.assignment1;
+
+import java.util.Scanner;
+
+public class EvenOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+				System.out.println("Enter the size of array");
+				Scanner sc = new Scanner(System.in);
+                int index=sc.nextInt();
+				int arr[] = new int[index];
+				int disarr[]=new int[index];
+				int count=0;
+
+				for (int i = 0; i < arr.length; i++) {
+					System.out.println("Enter the value");
+					arr[i] = sc.nextInt();
+					
+				}
+				
+				for(int j=0;j<arr.length;j++)
+				{
+					if(arr[j]%2==0)
+					{
+						disarr[j]=arr[j];
+						
+					}
+					
+					
+					}
+				for(int j=0;j<arr.length;j++)
+				{
+					if(arr[j]%2!=0)
+					{
+						disarr[j]=arr[j];
+						
+					}
+					
+					
+					}
+				for(int j=0;j<disarr.length;j++)
+				{
+					System.out.println(disarr);
+					
+					
+					}
+				
+				
+				
+	}
+
+}

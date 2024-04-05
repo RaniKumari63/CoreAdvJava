@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=fundamental/src&lt;com.inheritance1{Book.java[Book" modifiers="1" timestamp="1670040035764"/>
+    <typeInfo handle="=fundamental/src&lt;com.inheritance1{A1.java[A1" modifiers="1" timestamp="1670383570356"/>
+    <typeInfo handle="=fundamental/src&lt;com.abstract1{Bank.java[Bank" modifiers="1025" timestamp="1670426938374"/>
+    <typeInfo handle="=fundamental/src&lt;com.abstract1{Student.java[Student" modifiers="1025" timestamp="1670536540472"/>
+    <typeInfo handle="=fundamental/src&lt;com.abstractassignment{Pcounter.java[Pcounter" modifiers="1025" timestamp="1670441335338"/>
+    <typeInfo handle="=fundamental/src&lt;com.abstractassignment{Recruitment.java[Recruitment" modifiers="1025" timestamp="1670450645449"/>
+    <typeInfo handle="=fundamental/src&lt;com.abstractassignment{Mprocess.java[Mprocess" modifiers="1024" timestamp="1670457833104"/>
+    <typeInfo handle="=fundamental/src&lt;com.abstractassignment{RequestedTicket.java[RequestedTicket" modifiers="1" timestamp="1670459975471"/>
+    <typeInfo handle="=fundamental/src&lt;com.abstractassignment{ConformedTicket.java[ConformedTicket" modifiers="1" timestamp="1670460484599"/>
+    <typeInfo handle="=fundamental/C:\/Users\/neral\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1667403388000"/>
+    <typeInfo handle="=fundamental/C:\/Users\/neral\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.nio.file(SecureDirectoryStream.class[SecureDirectoryStream" modifiers="1537" timestamp="1667403388000"/>
+    <typeInfo handle="=fundamental/C:\/Users\/neral\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;javax.crypto(SecretKey.class[SecretKey" modifiers="1537" timestamp="1667403388000"/>
+    <typeInfo handle="=fundamental/C:\/Users\/neral\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.5.v20221102-0933\/jre\/lib\/jrt-fs.jar`java.base=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/17\/docs\/api\/=/=/module=/true=/&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1667403388000"/>
+    <typeInfo handle="=UserProductServeltDB/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.suchiit.dao{UserDao.java[UserDao" modifiers="513" timestamp="1676612755004"/>
+</typeInfoHistroy>

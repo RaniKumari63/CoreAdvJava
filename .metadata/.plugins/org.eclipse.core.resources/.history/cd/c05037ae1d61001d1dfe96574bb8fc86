@@ -1,0 +1,18 @@
+package fundamental;
+
+public class VarArgEx {
+//m1(int... x)
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		m1();
+		m1(10);
+		m1(10,20);
+		m1(10,20,30,40);
+	}
+public static void m1(int... x)
+{
+	//internal var-arg parameter is considered as i dimensional array
+	System.out.println("m1"+x.length);
+}
+}

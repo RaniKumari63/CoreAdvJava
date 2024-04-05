@@ -1,0 +1,18 @@
+package com.collections;
+
+import java.util.LinkedList;
+
+public class ListIteratorEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  LinkedList l=new LinkedList();
+  l.add("baala");
+  l.add("venku");	
+  l.add("chiru");
+  l.add("naag");
+  System.out.println(l);
+		
+	}
+
+}

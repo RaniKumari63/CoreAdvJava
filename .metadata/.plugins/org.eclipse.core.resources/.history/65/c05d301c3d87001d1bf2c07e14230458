@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body style="background-color:powderblue;">
+<h1 style="background-color:red;" style="color:black">This is heading 1</h1>
+<p style="background-color:orange;">
+This paragraph<br>
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+<h2>this is heading 2</h2>
+<p>
+This paragraph
+contains         a lot of spaces
+in the source         code,
+but the        browser
+ignores it.
+</p>
+
+
+<hr>
+<p>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</p>
+
+
+<hr>
+
+<pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+</pre>
+</body>
+</html>

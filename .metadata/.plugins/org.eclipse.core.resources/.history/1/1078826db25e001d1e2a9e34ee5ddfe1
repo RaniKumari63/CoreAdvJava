@@ -1,0 +1,21 @@
+package fundamental;
+
+public class Pizza {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pizza =300;
+		int totalpizza=0;
+		int discount=0;
+		int  amount=0;
+		totalpizza=pizza*2;
+		System.out.println(totalpizza);
+		discount=totalpizza*(20/100);
+		System.out.println(discount);
+		amount=totalpizza-discount;
+		System.out.println(amount);
+		
+
+	}
+
+}

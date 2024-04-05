@@ -1,0 +1,92 @@
+package com.pms.details;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.pms.dao.ProductDAO;
+import com.pms.dao.impl.ProductDAOImpl;
+import com.pms.model.Product;
+
+public class AdminDetails {
+	ProductDAO daoimpl=new ProductDAOImpl();
+Scanner sc=new Scanner(System.in);
+	public void menuDetails()
+	{
+		while(true)
+		{
+			 System.out.format("%20s", "1)Product\n");
+			 System.out.format("%20S","2)Customer\n");
+			 System.out.format("%18s","3)Exit\n");
+			 System.out.println("Enter the choice");
+			 int choice=sc.nextInt();
+			 switch(choice)
+			 {
+			 case 1:
+				 productMenu();
+				 break;
+			 case 2:
+				 custMenu();
+
+				 break;
+			 case 3:System.exit(0);
+				 break;
+				 default:System.out.println("Enter Choice between 1 to 3");
+			 
+			 }
+			
+			
+		}
+	}
+		
+		public void productMenu()
+		{ 
+			while(true)
+			{
+				System.out.format("%20s", "1)AddProducts\n");
+				 System.out.format("%20S","2)ViewAllProducts\n");
+				 System.out.format("%20S","3)ViewProduct\n");
+				 System.out.format("%20S","4)UpdateProduct\n");
+				 System.out.format("%20S","5)DeleteProduct\n");
+				 System.out.format("%20S","6)Back\n");
+				 System.out.println("Enter the choice");
+				 int choice=sc.nextInt();
+				 switch(choice)
+				 {
+				 case 1:
+					 System.out.println("Enter Product Id");
+					 int pid=sc.nextInt();
+					 System.out.println("Enter Produc Name");
+					 String pname=sc.next();
+					 System.out.println("Enter Product Quantity");
+					 int pqty=sc.nextInt();
+					 System.out.println("Enter Product Price");
+					 int pprice=sc.nextInt();
+					 Product pro=new Product(pid,pname,pqty,pprice);
+					int count= daoimpl.addProducts(pro);
+					if(count!=0)
+					 
+					{
+						System.out.println("Data Inserted Successfully");
+					}
+					else
+					{
+						System.out.println("Data Not Inserted Successfully");
+					}
+					
+					 break;
+				 case 2:List<Product> viewAllProducts=daoimpl.viewAllProducts();
+				 viewAllProducts.stream().forEach(prod->System.out.println(prod.getPid()+"\t"+prod.getPname()+"\t"+prod.getPqty()+"\t"+prod.getPprice()));
+				 break;
+				 case 3:System.out.println("Enter Product Id");
+					 Product product=daoimpl.viewProduct(sc.nextInt());
+					 if(product!=null)
+					 {
+						 System.out.println(product.getPid()+"\t"+product.getPname()+"\t"+product.getPqty()+"\t"+product.getPprice());
+					 
+					 }
+				 }
+				
+			}
+		}
+	
+}

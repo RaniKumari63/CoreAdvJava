@@ -1,0 +1,35 @@
+package com.java8features;
+
+import java.util.function.BiFunction;
+
+class Employee8{
+	
+	int eno;
+	String name;
+	public int getEno() {
+		return eno;
+	}
+	public void setEno(int eno) {
+		this.eno = eno;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Employee8(int eno, String name) {
+		super();
+		this.eno = eno;
+		this.name = name;
+	}
+	
+}
+public class BiFunctionEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+BiFunction<Integer,String,Employee8> e=(eno,ename)->new Employee8(eno,ename);
+	}
+
+}

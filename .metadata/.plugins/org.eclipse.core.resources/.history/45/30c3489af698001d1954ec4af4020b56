@@ -1,0 +1,21 @@
+package com.innerclass1;
+
+public class A {
+	class B{
+		
+		class C
+		{
+			public void m1()
+			{
+				System.out.println("C class method");
+			}
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

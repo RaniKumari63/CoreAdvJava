@@ -1,0 +1,74 @@
+package com.sort;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Mergesort {
+	int mid = 0;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Mergesort ms=new Mergesort();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the size");
+		int len = sc.nextInt();
+		int[] array2 = new int[len];
+		for (int i = 0; i < array2.length; i++) {
+			array2[i] = sc.nextInt();
+		}
+		int low = 0;
+		int high = len - 1;
+		ms.mergeSort(array2,low,high);
+	}
+
+	void mergeSort(int[] array1, int low, int high) {
+		if (low < high) {
+			mid = (low + high) / 2;
+			
+			mergeSort(array1, low, mid);
+			
+			
+			
+			
+			mergeSort(array1, mid + 1, high);
+			
+			int[] sortedarray = merge(array1, low, mid, high);
+			System.out.println(Arrays.toString(sortedarray));
+		}
+	}
+
+	int[] merge(int[] array9, int l, int m, int h) {
+		int[] sa = new int[l + h];
+		int left = l;
+		int right = mid + l;
+		int total = l;
+		while ((left <= mid) && (right <= h)) {
+			if ((array9[left]) <= (array9[right])) {
+				sa[total] = array9[left];
+				left++;
+
+			} else {
+				sa[total] = array9[right];
+				right++;
+
+			}
+			total++;
+		}
+		if (left > mid) {
+			while (right <= h) {
+				sa[total] = array9[right];
+				right++;
+				total++;
+			}
+		} else {
+			while (left <= mid) {
+				sa[total] = array9[left];
+				left++;
+				right++;
+			}
+
+		}
+		return sa;
+	}
+
+}

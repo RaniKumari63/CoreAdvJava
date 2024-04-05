@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<button>
+  click
+</button>
+<button>simon</button><button>chocolate</button>
+<p>Hello,World!</p>
+<p>Today i went to the grocery store to buy some eggs and vegetables.</p>
+</body>
+</html>

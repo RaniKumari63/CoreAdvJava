@@ -1,0 +1,11 @@
+package com.parentchild;
+
+public class Child6 extends Parent5{
+
+public static void m3()
+{
+	
+}
+
+
+}

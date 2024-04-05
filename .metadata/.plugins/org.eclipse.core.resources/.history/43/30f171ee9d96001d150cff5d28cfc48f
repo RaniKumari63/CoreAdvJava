@@ -1,0 +1,19 @@
+package com.exception1;
+
+class Test2
+{
+public static void main(String[] args){
+try {
+	System.out.println("statement1");
+	System.out.println("statement2");
+	System.out.println("statement3");
+}
+catch(Exception ex)
+{
+	System.out.println("statement4");
+}
+}
+}
+
+
+

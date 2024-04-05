@@ -1,0 +1,21 @@
+package fundamental;
+
+enum Enums
+{
+    A, B, C;
+ 
+    private Enums()
+    {
+        System.out.println(10);
+       
+    }
+}
+ 
+public class Test67
+{
+    public static void main(String[] args)
+    {
+        Enum en = Enums.B;
+        
+    }
+}

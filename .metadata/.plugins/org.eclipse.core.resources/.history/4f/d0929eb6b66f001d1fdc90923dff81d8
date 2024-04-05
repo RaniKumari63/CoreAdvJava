@@ -1,0 +1,11 @@
+package EmployeeManagementSystem;
+
+public class EmployeeDetails {
+	
+	
+	public void empDetails()
+	{
+		
+	}
+
+}

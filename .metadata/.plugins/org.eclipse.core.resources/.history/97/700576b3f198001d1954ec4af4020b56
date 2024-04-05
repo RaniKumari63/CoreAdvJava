@@ -1,0 +1,23 @@
+package com.innerclass1;
+
+public class OuterEx2 {
+
+	
+	class InnerEx1{
+		public void printout()
+		{
+			System.out.print("hai");
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		OuterEx2 o=new OuterEx2();
+		o.m1();
+	}
+	public   void m1()
+	{  InnerEx1 in=new InnerEx1();
+	in.printout();
+		System.out.println("hello");
+	}
+
+}

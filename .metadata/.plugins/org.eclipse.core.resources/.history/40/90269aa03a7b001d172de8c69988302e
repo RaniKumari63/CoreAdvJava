@@ -1,0 +1,107 @@
+package com.lang2;
+
+import java.util.Scanner;
+
+public class VowelEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter String");
+		String str = sc.next();
+		vowels(str);
+		trimmethod(str);
+		lowercase(str);
+		upper(str);
+		palindrome(str);
+		
+	}
+
+	static void vowels(String str) {
+		for (int i = 0; i < str.length(); i++) {
+			if ((str.charAt(i) == 'a') || (str.charAt(i) == 'A') || (str.charAt(i) == 'e') || (str.charAt(i) == 'E')
+					|| (str.charAt(i) == 'i') || (str.charAt(i) == 'I') || (str.charAt(i) == 'O')
+					|| (str.charAt(i) == 'o') || (str.charAt(i) == 'U') || (str.charAt(i) == 'u')) {
+
+				System.out.print("Vowel " + str.charAt(i) + "\t");
+
+			}
+
+		}
+
+	}
+
+	static void trimmethod(String str1) {
+		System.out.println(" ");
+System.out.println(str1.trim());
+	}
+	
+	static void lowercase(String str2)
+	{
+		System.out.println(str2.toLowerCase());
+	}
+	static void upper(String str3)
+	{
+		System.out.println(str3.toUpperCase());
+	}
+	static void palindrome(String str4)
+	{ char[] rev=new char[str4.length()];
+		for(int i=str4.length()-1,j=0;(i>=0&&j<=str4.length());i--,j++)
+		{  
+			rev[j]=str4.charAt(i);
+			
+		}
+		String revstr=String.valueOf(rev);
+		System.out.println(revstr);
+		System.out.println(str4);
+		if(revstr.equalsIgnoreCase(str4))
+		{
+			System.out.println("string is palindrome");
+		}
+		else
+		{
+			System.out.println("string is not palindrome");
+		}
+	}
+	static void maxmin(String str5)
+	{
+		int flag=0;
+		int[] num=new int[str5.length()];
+		
+		for(int i=0;i<str5.length();i++)
+		{ char value= str5.charAt(i);
+		flag=0;
+		for(int j=0;j<str5.length();j++)
+		{  
+			if(value==str5.charAt(j))
+			{
+				 
+				flag++;
+				num[i]=flag;
+			}
+		}
+		
+		}
+		int max=0;
+		int maxindex=0;
+		
+		int min=0;
+		int minindex=0;
+		for(int  i=0;i<str5.length()-1;i++)
+		{ 
+			if(num[i]>num[i+1])
+			{max=num[i];
+			maxindex=i;
+			}
+			else
+			{
+				min=num[i];
+				minindex=i;
+			}
+			System.out.println(str5.charAt(maxindex)+max);
+			System.out.println(str5.charAt(minindex)+min);
+		}
+		
+	}
+
+}

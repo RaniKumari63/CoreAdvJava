@@ -1,0 +1,124 @@
+package com.train.details;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import com.train.DAOImpl.AdminDaoImpl;
+import com.train.DAOImpl.UserDaoImpl;
+import com.train.pojo.Classes;
+import com.train.pojo.Passenger;
+import com.train.pojo.Pnr;
+import com.train.pojo.Train;
+
+public class BookingDetails {
+
+	Scanner sc = new Scanner(System.in);
+	UserDaoImpl uimpl = new UserDaoImpl();
+
+	public Map<Train, Passenger> plist = new HashMap<Train, Passenger>();
+	public double pnrnumber = 0.0;
+
+	String sst;
+
+	String dst;
+
+	String date1;
+
+	String classes3;
+
+	int tno;
+	int value;
+	boolean value1;
+
+	public void menuDetails(int uid, String uname) {
+		while (true) {
+
+			System.out.println("1)AddPassenger");
+			System.out.println("2)ViewAllPassenger");
+			System.out.println("3)SelectPassenger");
+			System.out.println("4)BookTicket");
+			System.out.println("5)PayAmount");
+			System.out.println("6)PrintTicket");
+			System.out.println("7)Back");
+
+			System.out.println("Enter the choice");
+
+			int choice = sc.nextInt();
+			switch (choice) {
+			case 1:
+				uimpl.addPassenger(uid);
+
+				break;
+			case 2:
+				List<Passenger> p = uimpl.viewAllPassengers(uid, uname);
+				if (p.size() != 0) {
+					System.out.println("Passenger list");
+					for (Passenger ps : p) {
+						if (ps != null) {
+							System.out.println(ps.getPno() + "\t" + ps.getPname() + "\t" + ps.getPage() + "\t" + uname
+									+ "\t" + ps.getPaddr());
+
+						} else {
+							System.out.println("Passengers doesn't exist");
+						}
+					}
+
+				} else {
+					System.out.println("Passengers doesn't exist");
+				}
+				break;
+
+			case 3:
+				List<Passenger> selpass1 = uimpl.selectpassenger(uid, uname);
+				for (Passenger p5 : selpass1) {
+					if (p5 != null)
+						System.out.println(p5.getPno() + "\t" + p5.getPname() + "\t" + p5.getPage() + "\t" + uname
+								+ "\t" + p5.getPaddr());
+				}
+				break;
+			case 4:
+				value = 0;
+				List<Passenger> selpass = uimpl.selectpassenger1;
+				AdminDaoImpl adao = new AdminDaoImpl();
+				System.out.println("Enter Start Station ");
+				sst = sc.next();
+				System.out.println("Enter Destination Station");
+				dst = sc.next();
+				System.out.println("Enter Date(dd/mm/yy)");
+				date1 = sc.next();
+				System.out.println("Enter class Type");
+				classes3 = sc.next();
+				System.out.println("Enter Train no");
+				tno = sc.nextInt();
+
+				boolean value2 = uimpl.trainAvaliability(tno, sst, dst, date1, classes3);
+
+				if (value2 == true) {
+
+					value = uimpl.seatAvaliability(tno, sst, dst, date1, classes3);
+
+					value1 = uimpl.bookedTickets(tno, uid, classes3, value);
+
+				}
+
+				break;
+			case 5:
+
+				break;
+			case 6:
+				uimpl.printTickets(tno, uid, classes3, value);
+				break;
+			case 9:
+			default:
+				UserDetails ud = new UserDetails();
+
+				System.out.println("Thanks for Using This APP");
+
+			}
+
+		}
+
+	}
+}

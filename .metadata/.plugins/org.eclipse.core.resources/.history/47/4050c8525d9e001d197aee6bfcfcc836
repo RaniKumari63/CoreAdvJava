@@ -1,0 +1,21 @@
+package com.streams1;
+
+import java.util.ArrayList;
+import java.util.stream.Stream;
+
+public class StreamEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ArrayList<Integer> marks=new ArrayList<>();
+marks.add(10);
+marks.add(25);
+marks.add(2);
+marks.add(5);
+marks.add(7);
+marks.add(11);
+System.out.println(marks);
+
+	}
+
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\Neral\eclipse-workspace2\eclipse-workspace\StudentWebDb\src\main\java\com\suchiit\controller\RegistrationServlet.java"/>
+			<item value="C:\Users\neral\eclipse-workspace\Servlet6"/>
+			<item value="C:\Users\neral\eclipse-workspace\ServletEx3"/>
+			<item value="C:\Users\neral\eclipse-workspace\ServletContextEx"/>
+			<item value="C:\Users\neral\eclipse-workspace\ServletConfigEx\src\main\java\com\suchiit\controller\ServletConfigEx1.java"/>
+			<item value="C:\Users\neral\eclipse-workspace\advjava"/>
+			<item value="C:\Users\neral\eclipse-workspace\UpdateServletEx"/>
+			<item value="C:\Users\neral\eclipse-workspace\UpdateServletEx\src\main\java\com\student\controller\UpdateServlet.java"/>
+			<item value="C:\Users\neral\eclipse-workspace\FormServletExample4"/>
+			<item value="C:\Users\neral\eclipse-workspace\FormServletExample2"/>
+			<item value="C:\Users\neral\eclipse-workspace\FormServletExample1\src\main\java\com\forms\Servlet1.java"/>
+			<item value="C:\Users\neral\eclipse-workspace\ServletExamples"/>
+			<item value="C:\Users\neral\eclipse-workspace\FirstServletWebApp\src\main\java\com\suchiit\controller\LifeCycleServlet.java"/>
+			<item value="C:\Users\neral\eclipse-workspace\SecondWeb"/>
+			<item value="C:\Users\neral\eclipse-workspace\FirstServlet1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.suchiit.Junit6"/>
+			<item value="com.suchiit.Student"/>
+			<item value="com.suchiit.SecondWeb1"/>
+			<item value="com.suchiit.UserProductServeltDB"/>
+			<item value="com.suchiit.ServletCookies"/>
+			<item value="com.suchiit.Servlet6"/>
+			<item value="com.suchiit.ServletEx3"/>
+			<item value="com.suchiit.ServletSendingErrorEx"/>
+			<item value="com.suchiit.ServletContextEx"/>
+			<item value="com.suchiit.ServletConfigEx"/>
+		</list>
+		<list key="groupId">
+			<item value="com.suchiit"/>
+		</list>
+		<list key="artifactId">
+			<item value="Junit6"/>
+			<item value="Student"/>
+			<item value="SecondWeb1"/>
+			<item value="UserProductServeltDB"/>
+			<item value="ServletCookies"/>
+			<item value="Servlet6"/>
+			<item value="ServletEx3"/>
+			<item value="ServletSendingErrorEx"/>
+			<item value="ServletContextEx"/>
+			<item value="ServletConfigEx"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

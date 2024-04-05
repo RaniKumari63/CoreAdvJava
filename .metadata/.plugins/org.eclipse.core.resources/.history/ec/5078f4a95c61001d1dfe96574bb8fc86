@@ -1,0 +1,24 @@
+package fundamental;
+
+public class MainEx1 {
+
+	public static int main(String[] args) {
+		// TODO Auto-generated method stub
+return 10;
+	}
+	/*
+	 * public  void main(String[] args) { // TODO Auto-generated method stub
+	 * 
+	 * }
+	 */
+	/*
+	 * public static void Main(String[] args) { // TODO Auto-generated method stub
+	 * 
+	 * }
+	 */
+	
+	/*
+	 * public static int main(String[] args) { // TODO Auto-generated method stub
+	 * return 10; }
+	 */
+}

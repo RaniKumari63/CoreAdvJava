@@ -1,0 +1,17 @@
+package com.lang2;
+
+public class StringEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String s=new String("bhaskar");
+		s.concat("software");
+		System.out.println(s);
+		
+		StringBuffer s1=new StringBuffer("bhaskar");
+		s1.append("software");
+		System.out.println(s1);
+	}
+
+}

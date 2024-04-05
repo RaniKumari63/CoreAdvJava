@@ -1,0 +1,71 @@
+package com.train.details;
+
+import java.util.Scanner;
+
+import com.train.DAOImpl.AdminDaoImpl;
+import com.train.client.OnlineClient;
+
+
+
+public class EnquiryDetails {
+    Scanner sc=new Scanner(System.in);
+   
+
+ 
+public void menuDetails()
+{
+   int fare=0;
+   
+
+        while(true)
+        {
+            System.out.println("-----------------------------------------");
+            System.out.println("--------1)TrainEnquiry-------------------");
+            System.out.println("--------2)PNR Enquiry--------------------");
+            System.out.println("--------3)Fare Enquiry-------------------");
+            System.out.println("--------4)Back--------------------------");
+            System.out.println("Enter the choice");
+            int choice=sc.nextInt();
+            switch(choice)
+            {
+            case 1:
+            	AdminDaoImpl imp=new AdminDaoImpl();
+            	System.out.println("Enter Train No");
+            	int Trainno=sc.nextInt();
+            	imp.viewTrainInfo(Trainno);
+ 
+           
+                 break;
+            case 2:
+                break;
+            case 3:
+            	System.out.println("Enter quota type");
+            	String quota=sc.next();
+            	if(quota.equalsIgnoreCase("GN"))
+            		fare=100;
+            	else if(quota.equalsIgnoreCase("SC"))
+            		fare=120;
+            	else if(quota.equalsIgnoreCase("C"))
+            		fare=50;
+            	else if(quota.equalsIgnoreCase("PHC"))
+            		fare=30;
+            	else if(quota.equalsIgnoreCase("A"))
+            		fare=150;
+            	else if(quota.equalsIgnoreCase("Tatkal"))
+            		fare=150;
+            	System.out.println("fare for\t"+quota+"\tis\t"+fare);
+                break;
+            case 4:
+            	OnlineClient oc=new OnlineClient();
+            	oc.main(null);
+            	
+                          
+                           
+
+
+
+
+            }
+        }
+}
+}

@@ -1,0 +1,12 @@
+package com.interface1;
+
+public class A5 implements I{
+public void m1()
+{
+	System.out.println("m1-a");
+}
+public void m2()
+{
+	System.out.println("m2-a");
+}
+}

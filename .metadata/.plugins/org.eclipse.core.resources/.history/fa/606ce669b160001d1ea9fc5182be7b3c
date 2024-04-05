@@ -1,0 +1,26 @@
+package fundamental;
+
+public class StaticEx {
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//static variables
+	//the variable is not changed from object to object then we declare variable has static variable	
+	//static variable must declare at class level not within blocks,constructors,and methods
+		//static variable are created  at the time of class loading and destroyed at time of class unloading
+		//scope of static variable is scope .class file
+		//class is loading  
+		
+		//java test
+		//1  start jvm
+		// create and start main thread
+		// locate test.class file
+		//load test.class
+		//execute main() method
+		//unload test class
+		//terminate main thread
+		//shut down jvm
+	
+	}
+
+}

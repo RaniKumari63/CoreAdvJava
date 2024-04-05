@@ -1,0 +1,12 @@
+package fundamental;
+
+public class LocalEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		//local variable are declared inside  a method,block,construtor
+	}
+
+}

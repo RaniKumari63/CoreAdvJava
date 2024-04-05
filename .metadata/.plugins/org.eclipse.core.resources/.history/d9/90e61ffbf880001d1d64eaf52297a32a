@@ -1,0 +1,12 @@
+package com.lang2;
+
+public class Factorial {
+public static void main(String[] args)
+{
+	factorial(5);
+}
+static int factorial(int n)
+{
+	return n*factorial(n-1);
+}
+}

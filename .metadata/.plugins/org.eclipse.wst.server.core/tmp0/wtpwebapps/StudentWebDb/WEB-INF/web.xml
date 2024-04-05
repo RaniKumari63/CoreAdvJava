@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+                         "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+ <display-name>Archetype Created Web Application</display-name>
+ <servlet>
+  <servlet-name>RegistrationServlet</servlet-name>
+  <display-name>RegistrationServlet</display-name>
+  <servlet-class>com.suchiit.controller.RegistrationServlet</servlet-class>
+ </servlet>
+ 
+ 
+
+ <servlet>
+ 	<servlet-name>ViewServlet2</servlet-name>
+ 	<display-name>ViewServlet2</display-name>
+ 	<description></description>
+ 	<servlet-class>com.product.controller.ViewServlet2</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>ViewAllServlet</servlet-name>
+ 	<display-name>ViewAllServlet</display-name>
+ 	<description></description>
+ 	<servlet-class>com.suchiit.controller.ViewAllServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>EditServlet</servlet-name>
+ 	<display-name>EditServlet</display-name>
+ 	<description></description>
+ 	<servlet-class>com.suchiit.controller.EditServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>DeleteServlet</servlet-name>
+ 	<display-name>DeleteServlet</display-name>
+ 	<description></description>
+ 	<servlet-class>com.suchiit.controller.DeleteServlet</servlet-class>
+ </servlet>
+ <servlet>
+ 	<servlet-name>UpdateServlet</servlet-name>
+ 	<display-name>UpdateServlet</display-name>
+ 	<description></description>
+ 	<servlet-class>com.suchiit.controller.UpdateServlet</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+  <servlet-name>RegistrationServlet</servlet-name>
+  <url-pattern>/RegistrationServlet</url-pattern>
+ </servlet-mapping>
+
+
+ <servlet-mapping>
+ 	<servlet-name>ViewServlet2</servlet-name>
+ 	<url-pattern>/ViewServlet2</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>ViewAllServlet</servlet-name>
+ 	<url-pattern>/ViewAllServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>EditServlet</servlet-name>
+ 	<url-pattern>/edit</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>DeleteServlet</servlet-name>
+ 	<url-pattern>/delete</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+ 	<servlet-name>UpdateServlet</servlet-name>
+ 	<url-pattern>/update</url-pattern>
+ </servlet-mapping>
+ 
+ <welcome-file-list>
+  <welcome-file>/student2.html</welcome-file>
+ </welcome-file-list>
+</web-app>

@@ -1,0 +1,87 @@
+package com.train.DAOImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.train.DAO.UserDao;
+import com.train.pojo.Passenger;
+import com.train.pojo.User;
+
+public class UserDaoImpl implements UserDao{
+Scanner sc=new Scanner(System.in);
+	@Override
+	public void addUser() {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Enter UserName");
+		String uname=sc.next();
+		System.out.println("Enter User Id");
+		int uid=sc.nextInt();
+		System.out.println("Enter User add");
+		String uadd=sc.next();
+		System.out.println("Enter User email");
+		String uemail=sc.next();
+		
+		System.out.println("Enter User password");
+		String upwd=sc.next();
+		User u=new User(uname,uid, uadd,uemail, upwd);
+       
+		user.add(u);
+        System.out.println("Users Successfully Registered");
+		
+		
+	}
+
+	@Override
+	public void verifyUser() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addPassenger() {
+		
+		
+
+		
+		private int page;
+		private int uno;
+		int k=1;
+		while(k==1)
+		{
+		System.out.println("Enter Passenger No");
+		int pno=sc.nextInt();
+		System.out.println("Enter Passenger Name");
+		String pname=sc.next();
+		System.out.println("Enter Passenger Address");
+		String paddr=sc.next();
+		System.out.println("Enter Passenger Age");
+		int age=sc.nextInt();
+		int uno=
+		// TODO Auto-generated method stub
+		System.out.println("Do you want to enter more passenger Yes(1)/No(0)");
+		k=sc.nextInt();
+		}
+		
+	}
+
+	@Override
+	public List<Passenger> viewAllPassengers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void bookTickets() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void payAmount() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+package com.iterate;
+
+import java.util.Scanner;
+
+public class ForEx7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111,
+		// 121, 131, 141, 151, 161, 171, 181, 191, 202,
+
+		for (int num = 0; num < 10; num++) {
+
+			int x = 0;
+			int temp = 0;
+			int y = 0;
+			y = num;
+			int i = 0;
+			int num1 = num;
+			for (; num1 != 0;) {
+
+				x = num1 % 10; System.out.println(x);
+				num1 = num1 / 10;System.out.println(num1);
+				temp = temp * 10 + x;System.out.println(temp);
+
+			}
+			if (temp == y) {
+				System.out.println(y);
+
+			}
+
+		}
+
+	}
+
+}

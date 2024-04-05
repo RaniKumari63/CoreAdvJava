@@ -1,0 +1,12 @@
+package fundamental;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//byte b=128;
+		byte b=10.5;
+System.out.printl(b);
+	}
+
+}

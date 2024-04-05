@@ -1,0 +1,15 @@
+package com.exception1;
+
+public class Test37 extends Exception{
+	public static void main(String args[]) { 
+	      try {
+	         throw new Test37();
+	      }
+	      catch(Test37 t) {
+	         System.out.println("Got the Test Exception");
+	      }
+	      finally {
+	         System.out.println("Inside finally block ");
+	      }
+	  }
+}

@@ -1,0 +1,22 @@
+package com.abstract1;
+
+abstract class A4{ 
+A4(){ 
+System.out.println("A-Con"); 
+}
+} 
+class B4 extends A4{ 
+B4(){ 
+System.out.println("B-Con"); 
+}
+} 
+
+
+public class Test7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		B4 b=new B4();
+	}
+
+}

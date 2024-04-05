@@ -1,0 +1,26 @@
+package com.iterate;
+
+import java.util.Scanner;
+
+public class ForEx4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int k3 = 1;
+		
+		for(int i5 = 0;i5<10;++i5) // rows
+		{
+			for (int j5 = 0; j5< 5; ++j5) // columns
+			{
+				System.out.print(k3);
+				if(k3>5)
+				k3 = k3 + 5;
+			}
+			System.out.println();
+
+		}
+
+
+	}
+
+}

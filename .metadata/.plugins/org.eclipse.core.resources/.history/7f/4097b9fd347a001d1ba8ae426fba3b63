@@ -1,0 +1,13 @@
+package com.lang2;
+
+public class GarbageC {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GarbageC g=new GarbageC();
+		System.out.println(g);
+		g.finalize();
+		System.out.println(g);
+	}
+
+}

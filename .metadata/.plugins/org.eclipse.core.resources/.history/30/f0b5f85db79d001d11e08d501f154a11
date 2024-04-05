@@ -1,0 +1,60 @@
+package com.java8features;
+
+import java.util.ArrayList;
+import java.util.function.Predicate;
+class Employee
+{
+	String name;
+	double salary;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getSalary() {
+		return salary;
+	}
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+	public Employee(String name, double salary) {
+		super();
+		this.name = name;
+		this.salary = salary;
+	}
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}
+public class Test133 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String[] s= {"Nag","Chiranjeevi","Venkatesh","Balaiah","Sunny","Katrina"};
+	
+	Predicate<String>p=s1->s1.length()%2==0;
+	for(String s1:s)
+	{
+		if(p.test(s1))
+		{
+			System.out.println(s1);
+		}
+	}
+	
+	
+	ArrayList<Employee> l=new ArrayList<Employee>();
+	l.add(new Employee("durga",10000)); 
+	l.add(new Employee("aaaa",20000));
+	l.add(new Employee("bbbb",30000));
+	l.add(new Employee("cccc",40000));
+	l.add(new Employee("dddd",50000));
+	l.add(new Employee("eeee",60000));
+	l.add(new Employee("ffff",70000));
+	}
+
+}

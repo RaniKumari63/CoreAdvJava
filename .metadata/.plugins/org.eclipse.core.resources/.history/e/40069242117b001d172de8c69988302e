@@ -1,0 +1,17 @@
+package com.lang2;
+
+public class StringEx8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str="aebcd";
+
+char ch=str.charAt(1);
+char ch1=str.charAt(4);
+str=str.replace(ch, ch1);
+str=str.replace(ch1, ch);
+System.out.println(str);
+
+	}
+
+}

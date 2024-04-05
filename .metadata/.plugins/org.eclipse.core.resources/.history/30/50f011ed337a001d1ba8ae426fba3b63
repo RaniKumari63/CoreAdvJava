@@ -1,0 +1,16 @@
+package com.lang2;
+
+public class CloneEx {
+public static void main(String[] args) throws CloneNotSupportedException
+{int x=100;
+	CloneEx ex=new CloneEx();
+	CloneEX ex1=ex;
+	//we create object an object using existing object 
+	CloneEx demo=(CloneEx)ex.clone();
+	demo.x=900;
+	System.out.println(demo.x);
+	System.out.println(ex.x);
+	
+}
+
+}

@@ -1,0 +1,35 @@
+package com.streams1;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class StreamEx2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ArrayList<Integer> marks=new ArrayList<>();
+marks.add(10);
+marks.add(25);
+marks.add(2);
+marks.add(5);
+marks.add(7);
+marks.add(11);
+System.out.println(marks);
+Stream<Integer> updatemarks=marks.stream().map(i->i+5);
+updatemarks.forEach(e->System.out.println(e));
+updatemarks.forEach(System.out::println);
+
+
+Stream<Integer> updatemarks1=marks.stream().map(i->i+5).filter(i->i>35);
+//updatemarks.forEach(e->System.out.println(e));
+updatemarks1.forEach(System.out::println);
+
+
+List<Integer> updatemarks2=marks.stream().map(i->i+5).filter(i->i>35).collect(Collectors.toList());
+//updatemarks.forEach(e->System.out.println(e));
+updatemarks2.stream().forEachOrdered(System.out::println);
+	}
+
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/ServletConfigEx/src/main/webapp/WEB-INF/web.xml">
+ <TreeFormPage>
+  <Memento type="FileWebApp">
+   <Memento collapsed="false" type="Web Descriptor 2.3"/>
+   <Memento collapsed="false" type="Context Params"/>
+   <Memento collapsed="false" type="Advanced"/>
+  </Memento>
+  <Memento type="WebAppFolderServlets">
+   <Memento collapsed="false" type="Servlets"/>
+   <Memento collapsed="false" type="Servlet Mappings"/>
+  </Memento>
+  <Memento type="">
+   <Memento collapsed="false" type="Properties Editor"/>
+  </Memento>
+  <Memento type="WebAppFolderSecurityConstraints">
+   <Memento collapsed="false" type="Security Constraints"/>
+  </Memento>
+  <Memento type="WebAppFolderResources">
+   <Memento collapsed="false" type="Resource Env Refs"/>
+   <Memento collapsed="false" type="Resource Refs"/>
+  </Memento>
+  <Memento type="WebAppFolderTaglibs">
+   <Memento collapsed="false" type="Taglibs"/>
+  </Memento>
+  <Memento type="WebAppFolderErrorPages">
+   <Memento collapsed="false" type="Error Pages"/>
+  </Memento>
+  <Memento type="WebAppWelcomFileList">
+   <Memento collapsed="false" type="Welcome Files"/>
+  </Memento>
+  <Memento type="WebAppFolderMimeMappings">
+   <Memento collapsed="false" type="Mime Mappings"/>
+  </Memento>
+  <Memento type="WebAppFolderListeners">
+   <Memento collapsed="false" type="Listeners"/>
+  </Memento>
+  <Memento type="WebAppFolderFilters">
+   <Memento collapsed="false" type="Filters"/>
+   <Memento collapsed="false" type="Filter Mappings"/>
+  </Memento>
+  <Memento type="WebAppFolderContextParams">
+   <Memento type="Context Params"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

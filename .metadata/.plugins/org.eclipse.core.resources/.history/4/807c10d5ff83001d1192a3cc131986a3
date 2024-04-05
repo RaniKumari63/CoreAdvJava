@@ -1,0 +1,30 @@
+package com.collections;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class GenericsEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String[] s=new String[100000];
+s[0]="durga";
+s[1]="ravi";
+//s[2]=new Integer(10);//type safe
+ArrayList l=new ArrayList();
+l.add("vijaya");
+l.add("bhaskara");
+String name1=(String)l.get(0);//type casting
+ArrayList<String> l1=new ArrayList<String>();
+l1.add("vijaya");
+l1.add("bhaskara");
+String name2=l1.get(0);//type casting
+
+ArrayList<String> l4=new ArrayList<String>();
+List<String> l2=new ArrayList<String>();
+Collection<String>l3=new ArrayList<String>();
+ArrayList<Object> l4=new ArrayList<String>();
+
+}
+}

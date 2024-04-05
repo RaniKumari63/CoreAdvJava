@@ -1,0 +1,125 @@
+package com.train.details;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+import com.train.DAOImpl.*;
+import com.train.client.OnlineClient;
+import com.train.pojo.Classes;
+import com.train.pojo.Passenger;
+import com.train.pojo.Seats1;
+import com.train.pojo.Stations;
+import com.train.pojo.Train;
+
+public class AdminDetails {
+	Scanner sc = new Scanner(System.in);
+	AdminDaoImpl aimpl = new AdminDaoImpl();
+
+	public void menuDetails() {
+		int index = 0;
+		while (true) {
+
+			System.out.format("%22s","1)Add Stations\n");
+			System.out.format("%24s","2)Add Berth Type\n");
+			System.out.format("%31s","3)Add Train Information\n");
+			System.out.format("%35s","4)View All TrainInformation\n");
+			System.out.format("%31s","5)View TrainInformation\n");;
+			System.out.format("%34s","6)Update Train Information\n");
+			System.out.format("%34s","7)Delete Train Information\n");
+			System.out.format("%21s","8)Help Report\n");
+			System.out.format("%14s","9)Back\n");
+
+			System.out.println("Enter the Choice :");
+			int choice = sc.nextInt();
+			switch (choice) {
+			case 1:
+				aimpl.addStations();
+				break;
+			case 2:
+				aimpl.addClasses();
+				break;
+			case 3:
+				aimpl.addTrainInfo();
+				break;
+			case 4:
+				List<Train> l = aimpl.viewAllTrainInfo();
+				if (l.size() != 0) {
+					
+					       System.out.format("%25s","TrainList\n");
+					for (Train t : l) {
+						if (t != null) {
+							String str= String.format("%23s", +t.getTno() + "\t" + t.getTname() + "\t" + t.getD());
+						   
+							    System.out.println(str);
+							
+							    System.out.format("%27"+ "s","StationList\n");
+							for (Stations s : t.getStations()) {
+								 
+								System.out.println("%19s"+s.getStno() + "\t" + s.getStname());
+							}
+
+							for (Classes c : t.getClasses()) {
+								String str2=String.format("%15s",c.getClasstype() + "\t");
+								System.out.println(str2);
+								String str3=String.format("%23s","no. of seats" + c.getSeats().getNoofseats()+"\n");
+								
+								System.out.println(str3);
+								String str4=String.format("%26s","seat no \t" + c.getSeats().getSeatno()+"\n");
+								System.out.println(str4);
+								index++;
+							}
+
+						} else {
+							System.out.println("Train List Doesn't Exist");
+
+						}
+
+					}
+				} else {
+					System.out.println("Train List Doesn't Exist");
+				}
+				break;
+			case 5:
+				System.out.println("Enter Train no");
+				Train t=aimpl.viewTrainInfo(sc.nextInt());
+				 System.out.print("Train No"+t.getTno()+"\t");
+				 System.out.print("Train Name"+t.getTname()+"\t");
+				 System.out.println("Date"+t.getD());
+				 for (Stations s : t.getStations()) {
+						System.out.println(s.getStno() + "\t" + s.getStname());
+						
+					}
+				 for (Classes c : t.getClasses()) {
+						System.out.print(c.getClasstype() + "\t");
+						System.out.println("no of seats" + c.getSeats().getNoofseats());
+						System.out.println("seat no" + c.getSeats().getSeatno());
+						index++;
+					}
+
+				 
+				 
+				 break;
+			case 6:
+				System.out.println("Enter Train no");
+				aimpl.updateTrainInfo(sc.nextInt());
+				break;
+			case 7:
+				System.out.println("Enter Train no");
+				aimpl.deleteTrainInfo(sc.nextInt());
+				break;
+			case 8:System.out.format("%s","Please Contact:  12345678");
+				break;
+
+			case 9:
+				OnlineClient oc = new OnlineClient();
+				oc.main(null);
+				break;
+			default:
+				System.out.println("Thanks for Using This APP");
+			}
+
+		}
+	}
+}

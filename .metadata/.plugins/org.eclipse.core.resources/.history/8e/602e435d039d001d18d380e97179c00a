@@ -1,0 +1,19 @@
+package com.java8features;
+
+class User
+{
+	String name,role;
+	User(String a,String b)
+	{
+	name=a;
+	role=b;
+	}
+}
+public class Test21 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

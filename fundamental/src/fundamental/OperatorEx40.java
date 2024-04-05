@@ -1,0 +1,32 @@
+package fundamental;
+
+public class OperatorEx40 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int x=(10>20)?30:40;
+System.out.println(x);
+
+int x1=(10>20)?30:((40>50)?60:70);
+System.out.println(x1);
+
+int x2=(10>20)?30:((100>20)?40:50);
+System.out.println(x2);
+
+int a=10,b=20;
+byte c1=(10>20)?30:40;
+byte c2=(10<20)?30:40;
+System.out.println(c1);
+System.out.println(c2);
+
+int x3=(10>20)?30:((100<20)?40:50);
+System.out.println(x3);
+
+
+
+
+
+
+	}
+
+}

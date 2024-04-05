@@ -1,0 +1,10 @@
+package com.java8features;
+
+public interface Interf55 {
+
+	public static void main(String[] args)
+	{
+		System.out.println("Interface main method");
+		
+	}
+}

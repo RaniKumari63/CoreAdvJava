@@ -1,0 +1,12 @@
+package com.lang2;
+
+public class StringMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="ashok";
+		System.out.println(s.charAt(3));//o
+		//System.out.println(s.charAt(100));// RE : 
+	}
+
+}

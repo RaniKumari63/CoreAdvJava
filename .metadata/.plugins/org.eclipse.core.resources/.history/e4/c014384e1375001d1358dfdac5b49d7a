@@ -1,0 +1,10 @@
+package com.classforname;
+import com.classforname.*;
+public class Test {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		// TODO Auto-generated method stub
+Class c=Class.forName("A");
+	}
+
+}

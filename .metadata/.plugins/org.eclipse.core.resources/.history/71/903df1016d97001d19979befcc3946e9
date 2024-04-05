@@ -1,0 +1,16 @@
+package com.exception1;
+
+import java.io.PrintWriter;
+
+class Test20 
+{
+	
+	
+	public static void main(String[] args)throws InterruptedException
+	{
+	doStuff();
+	}
+}
+
+
+

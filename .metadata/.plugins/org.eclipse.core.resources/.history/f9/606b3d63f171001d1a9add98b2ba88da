@@ -1,0 +1,16 @@
+package com.sort;
+
+import java.util.Scanner;
+
+public class Mergesort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+System.out.println("Enter the size");
+int len=sc.nextInt();
+int [] array1=new int[len];
+
+	}
+
+}

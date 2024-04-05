@@ -1,0 +1,28 @@
+package com.sort;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class BubbleSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+System.out.println("Enter array size");
+int len=sc.nextInt();
+int[] array4=new int[len];
+int temp=0;
+while(len>=1) {
+for(int i=0;i<array4.length-1;i++)
+{if(array4[i]>array4[i+1])
+		{temp=array4[i];
+		array4[i]=array4[i+1];
+		array4[i+1]=temp;
+		}
+	len=len-1;
+}
+System.out.println(Arrays.toString(array4));
+}
+	}
+
+}

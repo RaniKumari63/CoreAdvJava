@@ -1,0 +1,11 @@
+package fundamental;
+
+public class Test56 {
+
+	public  void main( String[] args ) 
+    {  
+        System.out.println( "Hello" + args[0] ); 
+    } 
+	}
+
+

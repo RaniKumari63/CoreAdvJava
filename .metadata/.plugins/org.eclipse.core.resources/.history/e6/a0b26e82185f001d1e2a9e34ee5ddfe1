@@ -1,0 +1,36 @@
+package fundamental;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//byte
+		//byte b=128;
+		//byte b= 10.5;
+		//byte b=true;
+		//byte b="druga";
+//System.out.println(b);
+
+//int
+		//int i=2147483648;
+		//int i=2147483648l;
+		//int i=true;
+		//boolean b=true;
+		//boolean b="True";
+		/*int x=0;
+		if(x)
+		{  System.out.println("boolean");
+			
+		}
+		else 
+		{
+			System.out.println("boolean");
+		}*/
+		
+		while(1)
+		{
+			System.out.println("hello");
+		}
+	}
+
+}

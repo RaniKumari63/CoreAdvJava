@@ -1,0 +1,12 @@
+package com.collections;
+
+public class GenericsEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String[] s=new String[100000];
+s[0]="durga";
+s[1]="ravi";
+s[2]=new Integer(10);}
+
+}

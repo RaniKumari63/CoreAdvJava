@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+.bootstrap-button1{
+background-color:rgb(121,82,179);
+color:white;
+height:40px;
+width:110px;
+border:none;
+font-weight:bold;
+border-radius:4px;
+cursor:pointer;
+margin-right:6px;
+
+
+}
+.bootstrap-button2
+{
+background-color:white;
+color:rgb(108,117,125);
+border-width:1px;
+border-style:solid;
+border-color:
+height:40px;
+width:110px;
+border:none;
+font-weight:bold;
+border-radius:4px;
+cursor:pointer;
+
+
+}
+
+
+</style>
+<button class="bootstrap-button1">
+Get started
+</button>
+
+<button class="bootstrap-button2">
+Download
+</button>
+
+</body>
+</html>

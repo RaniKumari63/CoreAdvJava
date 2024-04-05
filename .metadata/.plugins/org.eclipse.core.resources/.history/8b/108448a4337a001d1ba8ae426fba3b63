@@ -1,0 +1,11 @@
+package com.lang2;
+
+public class CloneEx {
+public static void main(String[] args)
+{
+	CloneEx ex=new CloneEx();
+	//we create object an object using existing object 
+	ex.clone();
+}
+
+}

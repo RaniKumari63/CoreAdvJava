@@ -1,0 +1,16 @@
+package com.collections;
+
+public class ArrrayListEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+// Resizable rray or growable array
+		//Duplicate 
+		//insertion order is preserved
+		//heterogenous object are allowed
+		//null insertion is possible
+		//
+		
+	}
+
+}

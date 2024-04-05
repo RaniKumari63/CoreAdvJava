@@ -1,0 +1,10 @@
+package com.java8;
+
+public interface ShapeFactory {
+Shape getShape(int x);
+}
+class Shape
+{
+	
+}
+

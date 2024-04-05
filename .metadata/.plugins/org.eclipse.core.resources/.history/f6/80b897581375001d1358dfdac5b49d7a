@@ -1,0 +1,12 @@
+package com.classforname;
+
+public class A {
+
+	static {
+		System.out.println("Class Loading");
+	}
+	A()
+	{
+		System.out.println("Object Creating");
+	}
+}

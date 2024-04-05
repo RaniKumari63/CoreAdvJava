@@ -1,0 +1,29 @@
+package com.innerclass1;
+
+public class Test2 {
+
+	int x=10;
+	static int y=20;
+	
+	public static void m1()
+	{ int z=80;
+		class Inner
+		{
+			public void sum(int i,int j)
+			{
+				System.out.println("The sum:"+(i+j));
+				System.out.println(x);
+				System.out.println(y);
+				System.out.println(z);
+			
+			}
+		}
+		Inner i=new Inner();	
+		i.sum(10, 20);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+new Test2().m1();
+	}
+
+}

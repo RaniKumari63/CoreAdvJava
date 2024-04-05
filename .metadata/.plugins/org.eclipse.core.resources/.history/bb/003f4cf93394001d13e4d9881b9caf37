@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<style>
+.request-now{
+background-color: black;
+color:white;
+border:none;
+height:40px;
+width:110px;
+cursor:pointer;
+
+
+}
+
+
+</style>
+<button class="request-now">
+Request now
+</button>
+
+<button class="amazon">
+Add to Cart
+</button>
+</body>
+</html>

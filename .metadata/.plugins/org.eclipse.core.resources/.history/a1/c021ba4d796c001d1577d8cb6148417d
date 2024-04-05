@@ -1,0 +1,8 @@
+package com.parentchild;
+
+public class Child5 extends Parent4{
+public void m1()
+{
+	
+}
+}

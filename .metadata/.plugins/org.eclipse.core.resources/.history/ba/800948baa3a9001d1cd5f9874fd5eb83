@@ -1,0 +1,18 @@
+package com.form;
+
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class RegistrationServlet
+ */
+public class RegistrationServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+    /**
+     * Default constructor. 
+     */
+    public RegistrationServlet() {
+        // TODO Auto-generated constructor stub
+    }
+
+}

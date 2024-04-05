@@ -1,0 +1,15 @@
+package com.java8features;
+
+interface Interf0 { 
+ default void m1() { 
+ System.out.println("Default Method"); 
+ } 
+ }
+public class Test9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

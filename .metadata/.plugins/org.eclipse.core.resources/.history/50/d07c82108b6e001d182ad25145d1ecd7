@@ -1,0 +1,48 @@
+package com.assignment1;
+
+import java.util.Scanner;
+
+public class SecondLargest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int firstmax = 0;
+		int firstmin = 0;
+		int secmax = 0;
+		int secmin = 0;
+		System.out.println("Enter the size of array");
+		Scanner sc = new Scanner(System.in);
+
+		int arr[] = new int[sc.nextInt()];
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println("Enter the value");
+			arr[i] = sc.nextInt();
+
+		}
+		firstmax = arr[0];
+		secmax = 0;
+		firstmin = arr[0];
+		for (int j = 0; j < arr.length; j++) {
+			if (arr[j] > firstmax) {
+				firstmax = arr[j];
+
+			}
+			if ((arr[j] > secmax) && (arr[j] < firstmax)) {
+				secmax = arr[j];
+				System.out.println(secmax);
+
+			}
+
+			if (arr[j] < firstmin) {
+				firstmin = arr[j];
+			}
+
+		}
+
+		System.out.println("the maximum value is" + secmax);
+		System.out.println("the minimum value is" + firstmin);
+
+	}
+
+}

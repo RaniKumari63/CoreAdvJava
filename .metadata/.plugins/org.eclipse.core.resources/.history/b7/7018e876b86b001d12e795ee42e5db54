@@ -1,0 +1,6 @@
+package com.interface1;
+
+interface Left1 {
+
+	public void m1();
+}

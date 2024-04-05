@@ -1,0 +1,101 @@
+package com.train.details;
+
+ 
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.train.DAOImpl.UserDaoImpl;
+import com.train.pojo.Passenger;
+
+ 
+
+public class BookingDetails {
+	UserDetails ud=new  UserDetails();
+    Scanner sc=new Scanner(System.in);
+    UserDaoImpl uimpl=new UserDaoImpl();
+    public void menuDetails(int uid,String uname)
+    {
+        while(true)
+        {
+            System.out.println("----------------------------------------------------");
+            System.out.println("-----------1)AddPassenger---------------------------");
+            System.out.println("-----------2)ViewAllPassenger-----------------------");
+            System.out.println("-----------3)SelectPassenger-------------------------");
+            System.out.println("-----------4)BookTicket------------------------------");
+            System.out.println("-----------5)PayAmount-------------------------------");
+            System.out.println("-----------6)PrintTicket-----------------------------");
+            System.out.println("-----------7)Back-----------------------------------");
+            System.out.println("-----------------------------------------------------");
+
+            System.out.println("Enter the choice");
+
+            int choice=sc.nextInt();
+            switch(choice)
+            {
+            case 1:
+            	uimpl.addPassenger(uid);
+            	
+                break;
+            case 2:
+            	List<Passenger> p=uimpl.viewAllPassengers(uid,uname);
+            	if(p.size()!=0)
+            	{ System.out.println("Passenger list");
+            		for(Passenger ps:p)
+            	{
+            		if(ps!=null)
+            		{
+            			System.out.println(ps.getPno()+"\t"+ps.getPname()+"\t"+ps.getPage()+"\t"+uname+"\t"+ps.getPaddr());
+            			
+            		}
+            		else
+            		{
+            			System.out.println("Passengers doesn't exist");		
+            		}
+            	}
+            		
+            	}else
+            	{
+            	System.out.println("Passengers doesn't exist");	
+            	}
+                break;
+            case 3:
+            	List<Passenger> p=uimpl.viewAllPassengers(uid,uname);
+            	if(p.size()!=0)
+            	{ System.out.println("Passenger list");
+            		for(Passenger ps:p)
+            	{
+            		if(ps!=null)
+            		{
+            			System.out.println(ps.getPno()+"\t"+ps.getPname()+"\t"+ps.getPage()+"\t"+uname+"\t"+ps.getPaddr());
+            			
+            		}
+            		else
+            		{
+            			System.out.println("Passengers doesn't exist");		
+            		}
+            	}
+            		
+            	}else
+            	{
+            	System.out.println("Passengers doesn't exist");	
+            	}
+            	
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+               case 9:
+               default:System.out.println("Thanks for Using This APP");
+
+            }
+
+        }
+    }
+
+ 
+
+}

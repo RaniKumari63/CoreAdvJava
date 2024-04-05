@@ -1,0 +1,20 @@
+package fundamental;
+
+public class LocalEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		//local variable are declared inside  a method,block,construtor
+	//local variable are accessed within a block,constructors,method
+	//temporary variables=stack=local variables=automatic variables
+		//stored inside stack memory area
+	//local variable created when the block is exceuted
+		//once the block execution is completed then local variable is gone
+	
+		//scope  of local variable is the block in which we  created
+		
+	}
+
+}

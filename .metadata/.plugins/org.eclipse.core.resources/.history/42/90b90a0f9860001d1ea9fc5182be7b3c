@@ -1,0 +1,12 @@
+package fundamental;
+
+public class StudentInstanceEx {
+
+	String name;
+	int rollno;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
